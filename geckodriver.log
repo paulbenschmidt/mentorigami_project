@@ -1,0 +1,32 @@
+1610840657518	geckodriver	INFO	Listening on 127.0.0.1:52366
+1610840661332	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paulb\\AppData\\Local\\Temp\\rust_mozprofilewBwC7r"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1610840663804	Marionette	INFO	Listening on port 52374
+1610840663947	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610840664324	Marionette	INFO	Stopped listening on port 52374
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 343))
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1610841331045	geckodriver	INFO	Listening on 127.0.0.1:52499
+1610841335769	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\paulb\\AppData\\Local\\Temp\\rust_mozprofilecoDo6A"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1610841338062	Marionette	INFO	Listening on port 52507
+1610841338383	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610841338746	Marionette	INFO	Stopped listening on port 52507
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
