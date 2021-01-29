@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/static/base.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="ribbon_content">
+                <form action="{% url 'home' %}" method="GET">
+                    <button type="submit" class="btn" id="home_icon">
+                        <i class="fa fa-home"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="ribbon_content">
+                <button class="btn" id="feed_icon">
+                    <i class="fa fa-newspaper-o"></i>
+                </button>
+            </div>
+            <div class="ribbon_content">
+                <form method="GET" action="{% url 'search:search' %}">
+                    <input class="form-control" id="search_ribbon" type="text" size="50"
+                        placeholder="Search mentors, groups, and peers"
+                    />
+                </form>
+            </div>
+            <div class="ribbon_content">
+                <button class="btn" id="profile_icon">
+                    <i class="fa fa-user-circle-o"></i>
+                </button>
+            </div>
+            <div class="ribbon_content">
+                <button class="btn" id="settings_icon">
+                    <i class="fa fa-cog"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="home_sections" id="groups_container">
+                <div>Groups</div>
+                <div>My Groups</div>
+                <div>Explore Groups</div>
+            </div>       
+            <div class="home_sections" id="mentors_container">
+                <div>Mentors</div>
+                <div>My Mentors</div>
+                <div>Explore Mentors</div>
+            </div>       
+            <div class="home_sections" id="peers_container">
+                <div>Mentors</div>
+                <div>My Mentors</div>
+                <div>Explore Peers</div>
+            </div>       
+        </div>
+    </body>
+
+</html>
