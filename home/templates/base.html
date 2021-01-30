@@ -25,8 +25,8 @@
                 </button>
             </div>
             <div class="ribbon_content">
-                <form action="{% url 'search:search' %}" method="GET">
-                    <input class="form-control" id="search_ribbon" type="text" size="50"
+                <form action="{% url 'search:search_results' %}" method="GET">
+                    <input class="form-control" id="search_bar" type="text" name="search" size="50"
                         placeholder="Search mentors, groups, and peers"
                     />
                 </form>
@@ -37,9 +37,12 @@
                 </button>
             </div>
             <div class="ribbon_content">
-                <button class="btn" id="settings_icon">
-                    <i class="fa fa-cog"></i>
-                </button>
+                <form action="{% url 'settings:settings_page' %}" method="GET">                  
+                    <button class="btn" id="settings_icon">
+                        <i class="fa fa-cog"></i>
+                    </button>
+                </form>
+                
             </div>
         </header>
 

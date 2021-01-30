@@ -1,4 +1,5 @@
 from django.test import TestCase
+from django.urls import reverse
 
 class HomePageTest(TestCase):
 
@@ -18,14 +19,5 @@ class HomePageTest(TestCase):
         self.assertContains(response, 'id="groups_container"')
         self.assertContains(response, 'id="mentors_container"')
         self.assertContains(response, 'id="peers_container"')
-
-    def test_search_ribbon_goes_to_search_page(self):
-        search_item = "Underwater basket weaving"
-        response = self.client.get('/search/', data={'text': search_item})
-        search_item_formatted = search_item.replace(' ', '_').lower()
-        print(response)
-        self.assertRedirects(response, f'/search/{search_item_formatted}/')
-
-
 
     # def test_blank_search_entry_does_nothing(self):
