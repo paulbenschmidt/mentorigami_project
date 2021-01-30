@@ -1,3 +1,27 @@
 #id_text {
     margin-top: 2ex;
 }
+
+.header {
+    padding: 9px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .ribbon_content {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .home_sections {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    width:30%;
+    margin-right:30px;
+    background:#cccccc;
+    color:#333333;
+  }
+  
