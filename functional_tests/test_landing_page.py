@@ -2,7 +2,9 @@ from selenium.webdriver.common.keys import Keys
 
 from base import FunctionalTest
 
+
 class LandingPageTest(FunctionalTest):
+
     def test_user_can_search_channels_from_landing_page(self):
         # Paula hears about a new mentor site for learning and goes to check it out
         self.browser.get(self.live_server_url)
