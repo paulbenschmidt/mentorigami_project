@@ -10,7 +10,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mentorigami',
         'USER': 'postgres',
-        'PASSWORD': get_env_variable('POSTGRES_PASSWORD'),
+        'PASSWORD': get_secret('POSTGRES_PASSWORD'),
         'HOST': 'localhost',
         'PORT': 5432,
     }

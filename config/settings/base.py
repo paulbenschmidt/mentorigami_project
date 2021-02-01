@@ -1,20 +1,19 @@
 import os
-import environ
+import json
 
 from django.core.exceptions import ImproperlyConfigured
 
 
 # Functions
+with open('secrets.json') as f:
+    secrets = json.load(f)
 
-def get_env_variable(var_name):
-    """Get environment variable or return exception"""
-    env = environ.Env()
-    environ.Env.read_env()
-
-    try: 
-        return env(var_name)
+def get_secret(setting, secrets=secrets):
+    '''Get the secret variable or return explicit exception.'''
+    try:
+        return secrets[setting]
     except KeyError:
-        error_msg = 'Set the {} environment variable'.format(var_name)
+        error_msg = 'Set the {0} environment variable'.format(setting)
         raise ImproperlyConfigured(error_msg)
 
     
@@ -22,7 +21,7 @@ def get_env_variable(var_name):
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = get_env_variable('MENTORIGAMI_SECRET_KEY')
+SECRET_KEY = get_secret('SECRET_KEY')
 
 ALLOWED_HOSTS = []
 
