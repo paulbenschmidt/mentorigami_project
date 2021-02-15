@@ -5,7 +5,7 @@ class HomePageTest(TestCase):
 
     def test_home_uses_template(self):
         response = self.client.get('/')
-        self.assertTemplateUsed(response, 'home.html')
+        self.assertTemplateUsed(response, 'home/home.html')
 
     def test_all_ribbon_buttons_are_available(self):
         response = self.client.get('/')

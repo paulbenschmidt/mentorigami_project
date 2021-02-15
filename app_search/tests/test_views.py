@@ -6,7 +6,7 @@ class SearchPageTest(TestCase):
 
     def test_search_uses_template(self):
         response = self.client.get(reverse('search:search_results'))
-        self.assertTemplateUsed(response, 'search_results.html')
+        self.assertTemplateUsed(response, 'search/search_results.html')
 
     def test_search_url_returns_200(self):
         data = {'search': 'Underwater basket weaving'} # can add more params here
