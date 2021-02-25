@@ -1,6 +1,8 @@
 from django.conf.urls import url
 from app_home import views
 
-urlpatterns = [
+app_name = 'app_home'
 
+urlpatterns = [
+    url(r'', views.home_page, name='home_page'),
 ]

@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'app_search',
     'app_settings',
     'functional_tests',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -47,6 +48,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+AUTH_USER_MODEL = 'users.User'
 
 ROOT_URLCONF = 'config.urls'
 
@@ -95,4 +98,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
