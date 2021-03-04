@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
 
-class HomePageTest(TestCase):
+class CoreTest(TestCase):
 
     def test_home_uses_template(self):
         response = self.client.get('/')
