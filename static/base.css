@@ -10,12 +10,12 @@
     font-size: 30px;
   }
   
-  .ribbon_content {
+.ribbon_content {
     display: inline-block;
     text-align: center;
   }
   
-  .home_sections {
+.home_sections {
     display: inline-block;
     text-align: center;
     border: 1px solid black;

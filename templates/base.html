@@ -44,10 +44,13 @@
                 </form>
                 
             </div>
+            <div class="ribbon_content">
+                <a href="{% url 'users:sign_in' %}">Sign In</a>             
+            </div>
         </header>
 
         <body>
-            {% block contents %}{% endblock %}
+            {% block contents %}{% endblock contents %}
         </body>
     </body>
 </html>

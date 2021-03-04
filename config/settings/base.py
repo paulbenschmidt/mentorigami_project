@@ -5,6 +5,7 @@ from django.core.exceptions import ImproperlyConfigured
 
 
 # Functions
+
 with open('secrets.json') as f:
     secrets = json.load(f)
 
@@ -36,7 +37,8 @@ INSTALLED_APPS = [
     'app_search',
     'app_settings',
     'functional_tests',
-    'users'
+    'users',
+    'templates',
 ]
 
 MIDDLEWARE = [

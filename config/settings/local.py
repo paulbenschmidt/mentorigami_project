@@ -2,7 +2,6 @@ from .base import *
 
 DEBUG = True
 
-
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 DATABASES = {
@@ -15,6 +14,5 @@ DATABASES = {
         'PORT': get_secret('PORT'),
     }
 }
-
 
 # INSTALLED_APPS += ['debug_toolbar', ]
